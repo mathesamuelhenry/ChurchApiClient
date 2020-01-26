@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ChurchAccountingApiClient
 {
-    public class Class1
+    public class ApiCallerBase
     {
+        public ApiCallerBase(string uri)
+        {
+            ApiHelper.InitializeClient(uri);
+        }
     }
 }
